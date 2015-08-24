@@ -1,0 +1,130 @@
+@import "colors";
+@import "typography";
+
+body {
+  background: #ffffff;;
+  font-family:"Aries Book", sans-serif;
+}
+
+header {
+  height:600px;
+  width:100%;
+  background:$brand-color;
+  color:white;
+}
+
+header nav {
+  height:85px;
+  width:100%;
+}
+
+header .container {
+  text-align:center;
+  padding-top:190px;
+}
+
+header .container h1 {
+  font-size:40px;
+  font-weight:300;
+}
+
+header .container h2{
+  font-size:20px;
+  font-weight:300;
+}
+
+header .container h3 {
+  font-size:16px;
+  font-weight:200;
+}
+
+.onefieldsubmit {
+  margin-top:20px;
+
+  input {
+    margin:0;
+  }
+
+  input[type="text"] {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height:50px;
+    background:white;
+    border:none;
+    padding:0 30px;
+    color:#666666;
+    width:270px;
+    margin-right:-5px;
+    outline:none;
+  }
+  input[type="submit"] {
+    background:#a1e98b;
+    border:none;
+    color:#333333;
+    font-weight:600;
+    height:50px;
+    padding:0 30px 0 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
+
+main {
+  padding:90px 0;
+
+  h1, h2, h3, h4 {
+    color:$main-headline-color;
+  }
+
+  h1 {
+    font-size:36px;
+    font-weight:300;
+  }
+}
+
+section {
+  padding:30px 0;
+
+  &.media {
+    background:#f2f2f2;
+  }
+}
+
+.navbar-default {
+  background: none;
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:white;
+}
+
+.navbar-nav>li>a {
+  line-height:40px;
+}
+
+//Change this for marking the active menu item
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color:White;
+  text-decoration:none;
+  background:none;
+}
+
+//Change this for marking the hovered menu item
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color:White;
+  text-decoration:none;
+  background:none;
+}
+
+.navbar-brand>img {
+  display:inline-block;
+}
+
+.navbar-brand {
+  float: left;
+  height: auto;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 85px;
+}
