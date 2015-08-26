@@ -1,0 +1,100 @@
+.navbar-default {
+  background: $brand-color;
+  border: none;  ;
+  transition:box-shadow 0.4s;
+
+  &.fixed {
+
+  }
+
+}
+
+.navbar-default .navbar-nav>li>a {
+  color:white;
+}
+
+.navbar-nav>li>a {
+  line-height:40px;
+}
+
+//Change this for marking the active menu item
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color:White;
+  text-decoration:none;
+  background:none;
+}
+
+//Change this for marking the hovered menu item
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color:White;
+  text-decoration:none;
+  background:none;
+  text-shadow:1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.navbar-brand>img {
+  display:inline-block;
+}
+
+.navbar-brand {
+  float: left;
+  height: auto;
+  padding: 0 15px;
+  font-size: 18px;
+  line-height: 85px;
+}
+
+
+//MOBILE NAVBAR
+
+.mobile-navbar {
+  text-align: center;
+  padding: 20px 0;
+  position:relative;
+  display:none;
+
+  @media screen and (max-width: $break-sm) {
+    display:block;
+  }
+
+  .mobile-nav {
+    position:absolute;
+    top:30px;
+    left:20px;
+    cursor:pointer;
+  }
+
+  .washa-logo {
+    display: inline-block;
+  }
+
+  .mobile-login {
+    position:absolute;
+    top:20px;
+    right:20px;
+  }
+
+}
+
+#mobile-menu {
+  width:100%;
+  list-style-type: none;
+  text-align:center;
+  padding:0;
+  padding-top:15px;
+  display:none;
+
+  li {
+
+    a {
+      color:white;
+      line-height:35px;
+      display:block;
+
+      &:hover {
+        background:deepskyblue;
+      }
+    }
+  }
+
+}

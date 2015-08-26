@@ -11,6 +11,10 @@
     position:absolute;
     bottom:-18px;
     left:2px;
+
+    @media screen and (max-width: $break-sm) {
+      bottom:-10px;
+    }
   }
 
 }

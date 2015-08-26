@@ -1,5 +1,8 @@
+@import "queries";
 @import "colors";
 @import "typography";
+
+@import "navbar";
 
 body {
   background: #ffffff;;
@@ -39,7 +42,11 @@ header .container h3 {
 }
 
 .onefieldsubmit {
-  margin-top:20px;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 360px;
+  position: relative;
+  text-align:left;
 
   input {
     margin:0;
@@ -53,19 +60,22 @@ header .container h3 {
     border:none;
     padding:0 30px;
     color:#666666;
-    width:270px;
+    width: calc(100% - 25px);
     margin-right:-5px;
     outline:none;
   }
   input[type="submit"] {
-    background:#a1e98b;
-    border:none;
-    color:#333333;
-    font-weight:600;
-    height:50px;
-    padding:0 30px 0 25px;
+    background: #a1e98b;
+    border: none;
+    color: #333333;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 25px 0 15px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
@@ -80,6 +90,50 @@ main {
     font-size:36px;
     font-weight:300;
   }
+
+  .process {
+    margin-top:65px;
+
+    p {
+      margin-top:35px;
+      font-size:16px;
+      line-height:24px;
+      padding:0 40px;
+      color:#666666;
+
+      @media screen and (max-width: $break-md) {
+
+        max-width:360px;
+        margin: 25px auto 50px;
+      }
+    }
+
+    .center-process {
+      position:relative;
+
+      &:before, &:after {
+        content:"";
+        width:150px;
+        height:10px;
+        background:url(../images/content/process/dots.png) no-repeat;
+        position:absolute;
+        top:80px;
+
+        @media screen and (max-width: $break-md) {
+          display:none;
+        }
+      }
+
+      &:before {
+        left:-80px;
+      }
+
+      &:after {
+        right:-80px;
+      }
+    }
+  }
+
 }
 
 section {
@@ -90,41 +144,139 @@ section {
   }
 }
 
-.navbar-default {
-  background: none;
-  border: none;
+
+.media {
+  img {
+    margin:0 20px;
+  }
 }
 
-.navbar-default .navbar-nav>li>a {
+.feedback {
+  padding:70px 0;
+
+  h1 {
+    margin-bottom:70px;
+  }
+
+  h4 {
+    font-size:20px;
+    font-weight:400;
+  }
+
+  p {
+    line-height:28px;
+    font-size:16px;
+    padding:0 20px;
+  }
+
+  .row img {
+    margin-top:40px;
+  }
+}
+
+.about {
+  padding-bottom:90px;
+
+  .half-block {
+    height:400px;
+    padding:85px 100px;
+    transition:padding 0.4s;
+
+    @media screen and (max-width: $break-sm) {
+      padding: 20px 40px;
+    }
+
+
+
+    ul {
+      list-style-type: none;
+      list-style-position: inside;
+      padding:0;
+
+      li {
+        line-height:22px;
+        margin-bottom:15px;
+        font-size:14px;
+
+        &:before {
+          content:"";
+          width:22px;
+          height:22px;
+          background:url(../images/checkmark.png);
+          display: inline-block;
+          vertical-align: middle;
+          margin-right:10px;
+        }
+      }
+    }
+
+    h1 {
+      font-size:36px;
+      font-weight:300;
+    }
+
+    &.half-green {
+      background:#a1e98b;
+      color:#333333;
+    }
+
+    &.half-blue {
+      background:#3498db;
+      color:#fff;
+
+      ul li:before {
+        background:url(../images/checkmark-white.png);
+      }
+    }
+
+    &.half-red {
+      background:#ff576b;
+      color:#fff;
+
+      ul li:before {
+        background:url(../images/checkmark-white.png);
+      }
+    }
+
+  }
+
+
+  .bg-pic {
+    height:400px;
+    background-size:cover;
+    background-position:center center;
+
+    &.half-pic1 {
+      background-image:url(../images/content/basket-cloths.jpg);
+    }
+
+    &.half-pic2 {
+      background-image:url(../images/content/washa-mobile.jpg);
+    }
+
+    &.half-pic3 {
+      background-image:url(../images/content/cloths-hanging.jpg);
+    }
+  }
+}
+
+footer {
+  width:100%;
+  height:200px;
+  background:$brand-color;
   color:white;
+  padding:40px;
 }
 
-.navbar-nav>li>a {
-  line-height:40px;
+
+.hide-sm {
+  @media screen and (max-width: $break-sm) {
+    display:none;
+  }
 }
 
-//Change this for marking the active menu item
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-  color:White;
-  text-decoration:none;
-  background:none;
-}
-
-//Change this for marking the hovered menu item
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-  color:White;
-  text-decoration:none;
-  background:none;
-}
-
-.navbar-brand>img {
-  display:inline-block;
-}
-
-.navbar-brand {
-  float: left;
-  height: auto;
-  padding: 0 15px;
-  font-size: 18px;
-  line-height: 85px;
+.hide-md {
+  @media screen and (max-width: $break-md) {
+    display:none;
+  }
 }

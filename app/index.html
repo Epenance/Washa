@@ -26,11 +26,16 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img src="images/washa_logo.png"></a>
+  <!--[if lt IE 10]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-          <ul class="nav navbar-nav navbar-right">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand hide-sm" href="#"><img src="images/washa_logo.png"></a>
+
+          <ul id="desktop-menu" class="nav navbar-nav navbar-right hide-sm">
             <li class="active"><a href="#">Hjem</a></li>
             <li><a href="#">Konceptet</a></li>
             <li><a href="#">Washa+</a></li>
@@ -38,6 +43,27 @@
             <li><a href="#">Hjælp</a></li>
             <li><a href="#">Log ind</a></li>
           </ul>
+
+        <div class="mobile-navbar">
+          <div class="mobile-nav">
+            <img src="images/mobile_nav.png" height="25" alt=""/>
+          </div>
+
+          <a class="washa-logo" href="#">
+            <img src="images/washa_logo_mobile.png" height="40"></a>
+
+          <a href="#" class="mobile-login">
+            <img src="images/login.png" height="35" alt=""/>
+          </a>
+        </div>
+
+        <ul id="mobile-menu">
+
+        </ul>
+
+
+
+
 
       </div>
     </nav>
@@ -60,25 +86,107 @@
     <main>
       <div class="container text-center">
         <h1 class="text-center bottom-margin-60">At få vasket tøj har <span class="aldrig-underline">aldrig</span> været nemmere</h1>
-        <img src="images/temp_video.png" alt=""/>
+        <iframe src="https://player.vimeo.com/video/112921088" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="row process">
+          <div class="col-md-4">
+            <img src="images/content/process/calendar.png" alt=""/>
+            <p>Vælg selv hvor, og hvornår du ønsker dit vaske- og rensetøj afhentet og leveret. </p>
+          </div>
+          <div class="col-md-4 center-process">
+            <img src="images/content/process/handwash.png" alt=""/>
+            <p>Vælg selv hvor, og hvornår du ønsker dit vaske- og rensetøj afhentet og leveret. </p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/content/process/hanger.png" alt=""/>
+            <p>Vælg selv hvor, og hvornår du ønsker dit vaske- og rensetøj afhentet og leveret. </p>
+          </div>
+        </div>
       </div>
     </main>
 
     <section class="media text-center">
-      <h1>Media Section</h1>
+      <a href="#"><img src="images/content/media/sn.png" alt=""/></a>
+      <a href="#"><img src="images/content/media/eb.png" alt=""/></a>
+      <a href="#"><img src="images/content/media/finans.png" alt=""/></a>
+      <a href="#"><img src="images/content/media/mx.png" alt=""/></a>
+      <a href="#"><img src="images/content/media/ivaekst.png" alt=""/></a>
+      <a href="#"><img src="images/content/media/lorry.png" alt=""/></a>
     </section>
 
     <section class="feedback">
       <div class="container text-center">
-        <h1>Kunde feedback section</h1>
+        <h1>Det siger vores kunder</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Claus, Vesterbro</h4>
+            <p>"Vores vaskemaskine brød pludselig sammen så jeg ville Google nærmeste møntvask og der dukkede så Washas annonce op. Smart tænkte jeg. Lidt ligesom at lege en rig amerikansk frue der får ordnet den slags af andre. Bortset fra at det slet ikke er dyrt at være lidt glamourøs når man er kunde hos Washa.”</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Claus, Vesterbro</h4>
+            <p>"Vores vaskemaskine brød pludselig sammen så jeg ville Google nærmeste møntvask og der dukkede så Washas annonce op. Smart tænkte jeg. Lidt ligesom at lege en rig amerikansk frue der får ordnet den slags af andre. Bortset fra at det slet ikke er dyrt at være lidt glamourøs når man er kunde hos Washa.”</p>
+          </div>
+        </div>
+        <div class="row">
+          <img src="images/trustpilot.png" alt="Det siger vores kunder"/>
+        </div>
       </div>
     </section>
 
+    <section class="about">
+      <div class="container">
+        <div class="row">
 
+          <div class="col-md-6 half-green half-block">
+            <h1>Mere rent - mere grønt</h1>
+            <ul>
+              <li>Vi benytter kun Svanemærket</li>
+              <li>Vi har gjort op med kemikalier og biobrændsel.</li>
+              <li>Vi benytter genanvendelige poser - mindre spild.</li>
+              <li>Vi gør kun brug af a-mærkede maskiner.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 half-pic1 bg-pic hide-md"></div>
+        </div>
 
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+        <div class="row">
+          <div class="col-md-6 half-pic2 bg-pic hide-md"></div>
+          <div class="col-md-6 half-blue half-block">
+            <h1>Mere rent - mere grønt</h1>
+            <ul>
+              <li>Vi benytter kun Svanemærket</li>
+              <li>Vi har gjort op med kemikalier og biobrændsel.</li>
+              <li>Vi benytter genanvendelige poser - mindre spild.</li>
+              <li>Vi gør kun brug af a-mærkede maskiner.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 half-red half-block">
+            <h1>Mere rent - mere grønt</h1>
+            <ul>
+              <li>Vi benytter kun Svanemærket</li>
+              <li>Vi har gjort op med kemikalier og biobrændsel.</li>
+              <li>Vi benytter genanvendelige poser - mindre spild.</li>
+              <li>Vi gør kun brug af a-mærkede maskiner.</li>
+            </ul>
+          </div>
+          <div class="col-md-6 half-pic3 bg-pic hide-md"></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">Content 1</div>
+          <div class="col-md-4">Content 2</div>
+          <div class="col-md-4">Content 3</div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
