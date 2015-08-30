@@ -22,3 +22,24 @@
   max-width:680px;
   margin:auto;
 }
+
+.page-headline {
+  h2 {
+    font-size:22px;
+    font-weight:bold;
+  }
+
+  p {
+    font-size:18px;
+    line-height:1.5;
+    font-weight:300;
+    color:#666666;
+  }
+}
+
+span.check {
+  display:inline-block;
+  width:25px;
+  height:25px;
+  background:url("../images/content/abonnementer/check.png") center center no-repeat;
+}

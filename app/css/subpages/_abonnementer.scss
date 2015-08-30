@@ -1,0 +1,60 @@
+@import "../queries";
+@import "../colors";
+
+
+.abonnementer {
+
+  .subscription-table {
+    margin-top:60px;
+
+    >div {
+      @media screen and (max-width: $break-md) {
+        margin-bottom:80px;
+
+        &:last-child {
+          margin-bottom:0;
+        }
+      }
+    }
+
+    h3 {
+      margin-top:30px;
+    }
+
+    h2.price {
+      color:$brand-color;
+      font-size:36px;
+      font-weight:300;
+      margin-top: 0;
+    }
+
+    table {
+      width:100%;
+      margin-bottom:40px;
+
+      tr {
+        height:40px;
+
+        &:nth-child(odd) {
+          background:#f2f2f2;
+        }
+
+        td {
+          text-align:left;
+          padding:0 13px;
+
+          &:nth-child(even) {
+            text-align:right;
+            //color:#3498db;
+          }
+        }
+      }
+    }
+
+    .btn {
+      padding: 11px 25px;
+      border-radius:25px;
+      border:none;
+    }
+  }
+}

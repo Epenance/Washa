@@ -1,23 +1,7 @@
+@import "../queries";
 @import "../colors";
 
 .priser {
-
-  h1 {
-
-  }
-
-  h2 {
-    font-size:22px;
-    font-weight:bold;
-  }
-
-  p {
-    font-size:18px;
-    line-height:1.5;
-    font-weight:300;
-    color:#666666;
-  }
-
   .pricetable {
     margin:40px 0;
 
@@ -50,7 +34,6 @@
 
     table {
       width:100%;
-      min-height:520px;
 
       tr {
         height:40px;
@@ -94,6 +77,10 @@
         background:url("../images/content/washa-man.png");
         right:0;
         bottom:0;
+
+      @media screen and (max-width: $break-md) {
+        display:none;
+      }
     }
   }
 
