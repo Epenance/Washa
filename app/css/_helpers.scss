@@ -1,0 +1,24 @@
+.hide-sm {
+  @media screen and (max-width: $break-sm) {
+    display:none;
+  }
+}
+
+.hide-md {
+  @media screen and (max-width: $break-md) {
+    display:none;
+  }
+}
+
+.bottom-margin-40 {
+  margin-bottom:40px;
+}
+
+.top-padding-60 {
+  padding-top:60px;
+}
+
+.small-center-text {
+  max-width:680px;
+  margin:auto;
+}

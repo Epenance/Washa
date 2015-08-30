@@ -1,8 +1,12 @@
 @import "queries";
 @import "colors";
 @import "typography";
+@import 'helpers';
 
 @import "navbar";
+
+//Import subpages
+@import 'subpages/priser';
 
 body {
   background: #ffffff;;
@@ -24,6 +28,10 @@ header nav {
 header .container {
   text-align:center;
   padding-top:190px;
+
+  @media screen and (max-width: $break-md) {
+    padding-top:140px;
+  }
 }
 
 header .container h1 {
@@ -81,6 +89,10 @@ header .container h3 {
 
 main {
   padding:90px 0;
+
+  iframe {
+    max-width:500px;
+  }
 
   h1, h2, h3, h4 {
     color:$main-headline-color;
@@ -141,6 +153,7 @@ section {
 
   &.media {
     background:#f2f2f2;
+    margin-top:0;
   }
 }
 
@@ -176,6 +189,11 @@ section {
 
 .about {
   padding-bottom:90px;
+
+
+  @media screen and (max-width: $break-sm) {
+    padding-bottom:0px;
+  }
 
   .half-block {
     height:400px;
@@ -269,14 +287,4 @@ footer {
 }
 
 
-.hide-sm {
-  @media screen and (max-width: $break-sm) {
-    display:none;
-  }
-}
 
-.hide-md {
-  @media screen and (max-width: $break-md) {
-    display:none;
-  }
-}
