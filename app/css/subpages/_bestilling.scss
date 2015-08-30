@@ -1,0 +1,119 @@
+@import "../queries";
+@import "../colors";
+
+.bestilling {
+
+
+  .order-table {
+    margin-top:60px;
+
+    .col-md-4 {
+      position:relative;
+
+      @media screen and (max-width: $break-md) {
+        margin-bottom:40px;
+      }
+
+      &.order-arrows {
+        &:before, &:after {
+          content:"";
+          display:block;
+          position:absolute;
+          background:url("../images/content/bestilling/arrow.png") center center no-repeat;
+          width:165px;
+          height:37px;
+          top:40px;
+
+          @media screen and (max-width: $break-md) {
+           display:none;
+          }
+        }
+
+        &:before {
+          left:-90px;
+        }
+
+        &:after {
+          right:-90px;
+        }
+      }
+
+      img {
+        margin-bottom:40px;
+      }
+
+      h3 {
+        font-size:20px;
+        font-weight:700;
+        margin-bottom:30px;
+      }
+
+      input[type="text"] {
+        height:50px;
+        line-height:50px;
+        width:100%;
+        padding:0 15px;
+        margin:0;
+        margin-bottom:20px;
+        border:1px solid #d9d9d9;
+        border-radius:4px;
+
+
+        &.form-postnumber {
+          width:calc(30% - 15px);
+          margin-right:11px;
+        }
+
+        &.form-city {
+          width:70%
+        }
+      }
+
+      .date-group {
+        margin-bottom:50px;
+      }
+
+      .date-group, .time-group {
+        text-align:center;
+        input[type="radio"] {
+          display:none;
+        }
+
+        label {
+          height:50px;
+          line-height:50px;
+          border:1px solid #d9d9d9;
+          border-radius:4px;
+          width:30%;
+          min-width:110px;
+          margin-bottom:10px;
+        }
+
+        input[type="radio"]:checked + label {
+          color:white;
+          background:$brand-color;
+          border:1px solid $brand-color;
+        }
+
+      }
+    }
+
+    .payment-cta {
+      margin-top:50px;
+
+      .btn {
+        padding: 11px 35px;
+        border-radius:25px;
+        border:none;
+        margin-bottom:30px;
+        font-size:20px;
+      }
+
+      p {
+        color:#666666;
+        font-size:16px;
+        line-height:26px;
+      }
+    }
+  }
+}
