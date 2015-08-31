@@ -1,0 +1,48 @@
+@import "../queries";
+@import "../colors";
+
+.faq-accordion {
+  margin-top:40px;
+  text-align:left;
+
+  .container {
+    max-width:700px;
+  }
+
+  .panel-group .panel {
+    margin-bottom:15px;
+  }
+
+  .panel.panel-default {
+
+    &.accordion-active {
+      .panel-heading {
+        background:white;
+
+        h4 a {
+          color:black;
+          font-weight:bold;
+          text-decoration:none;
+        }
+      }
+
+      .panel-body {
+        border-top:0;
+        padding-top:0;
+      }
+    }
+
+    .panel-heading {
+      padding: 15px 15px;
+      transition:background-color 0.4s;
+    }
+
+  }
+
+  .panel-heading h4 a {
+    color:$brand-color;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+}
