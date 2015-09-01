@@ -19,11 +19,9 @@ $(function() {
 
 
 $('.panel-collapse').on('show.bs.collapse', function () {
-  var ele = $(this).parent().addClass("accordion-active");
-  console.log(ele);
-})
+  $(this).parent().addClass('accordion-active');
+});
 
 $('.panel-collapse').on('hide.bs.collapse', function () {
-  var ele = $(this).parent().removeClass("accordion-active");
-  console.log(ele);
-})
+  $(this).parent().removeClass('accordion-active');
+});
