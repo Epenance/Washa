@@ -15,7 +15,6 @@ $(function() {
   setMobileNav();
 
   $('#mobile-menu li a').click(function() {
-    console.log("Hello?");
     $('#mobile-menu').slideToggle('slow', function() {
       //Stuff for when animation is done
     });
@@ -35,7 +34,7 @@ $('.panel-collapse').on('hide.bs.collapse', function () {
 //Smooth scroll for menu links
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
