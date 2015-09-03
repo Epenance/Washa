@@ -1,5 +1,5 @@
-@import "queries";
-@import "colors";
+@import "fonts";
+@import "variables";
 @import "typography";
 @import 'helpers';
 
@@ -13,7 +13,7 @@
 
 body {
   background: #ffffff;;
-  font-family:"Aries Book", sans-serif;
+  font-family:$washa-font-family;
 }
 
 header {
@@ -130,7 +130,7 @@ main {
         content:"";
         width:150px;
         height:10px;
-        background:url(../images/content/process/dots.png) no-repeat;
+        background:url(#{$image_src_path}/content/process/dots.png) no-repeat;
         position:absolute;
         top:80px;
 
@@ -152,11 +152,12 @@ main {
 }
 
 section {
-  padding:30px 0;
+  padding:90px 0;
 
   &.media {
     background:#f2f2f2;
     margin-top:0;
+    padding:30px 0;
   }
 }
 
@@ -223,7 +224,7 @@ section {
           content:"";
           width:22px;
           height:22px;
-          background:url(../images/checkmark.png);
+          background:url(#{$image_src_path}/checkmark.png);
           display: inline-block;
           vertical-align: middle;
           margin-right:10px;
@@ -246,7 +247,7 @@ section {
       color:#fff;
 
       ul li:before {
-        background:url(../images/checkmark-white.png);
+        background:url(#{$image_src_path}/checkmark-white.png);
       }
     }
 
@@ -255,7 +256,7 @@ section {
       color:#fff;
 
       ul li:before {
-        background:url(../images/checkmark-white.png);
+        background:url(#{$image_src_path}/checkmark-white.png);
       }
     }
 
@@ -268,15 +269,15 @@ section {
     background-position:center center;
 
     &.half-pic1 {
-      background-image:url(../images/content/basket-cloths.jpg);
+      background-image:url(#{$image_src_path}/content/basket-cloths.jpg);
     }
 
     &.half-pic2 {
-      background-image:url(../images/content/washa-mobile.jpg);
+      background-image:url(#{$image_src_path}/content/washa-mobile.jpg);
     }
 
     &.half-pic3 {
-      background-image:url(../images/content/cloths-hanging.jpg);
+      background-image:url(#{$image_src_path}/content/cloths-hanging.jpg);
     }
   }
 }

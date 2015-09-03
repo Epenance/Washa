@@ -1,5 +1,4 @@
-@import "../queries";
-@import "../colors";
+@import "../variables";
 
 .bestilling {
 
@@ -19,7 +18,7 @@
           content:"";
           display:block;
           position:absolute;
-          background:url("../images/content/bestilling/arrow.png") center center no-repeat;
+          background:url("#{$image_src_path}/content/bestilling/arrow.png") center center no-repeat;
           width:165px;
           height:37px;
           top:40px;

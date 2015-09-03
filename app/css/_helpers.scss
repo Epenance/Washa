@@ -41,5 +41,5 @@ span.check {
   display:inline-block;
   width:25px;
   height:25px;
-  background:url("../images/content/abonnementer/check.png") center center no-repeat;
+  background:url(#{$image_src_path}/content/abonnementer/check.png) center center no-repeat;
 }

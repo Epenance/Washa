@@ -9,6 +9,25 @@
 
 }
 
+#menu-order-cta {
+  float: right;
+  margin-top: 18px;
+  margin-left: 15px;
+
+  @media screen and (max-width: $break-sm) {
+    display:none;
+  }
+
+  a {
+    border-radius:15px;
+    padding: 6px 16px;
+
+    &:hover {
+      border-color:#449d44;;
+    }
+  }
+}
+
 .navbar-default .navbar-nav>li>a {
   color:white;
 }
@@ -93,6 +112,7 @@
 
       &:hover {
         background:deepskyblue;
+        text-decoration:none;
       }
     }
   }

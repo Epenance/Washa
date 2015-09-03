@@ -1,5 +1,4 @@
-@import "../queries";
-@import "../colors";
+@import "../variables";
 
 .priser {
   .pricetable {
@@ -74,7 +73,7 @@
         width:155px;
         height:225px;
         position:absolute;
-        background:url("../images/content/washa-man.png");
+        background:url("#{$image_src_path}/content/washa-man.png");
         right:0;
         bottom:0;
 
